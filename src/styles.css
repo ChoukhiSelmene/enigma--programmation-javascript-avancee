@@ -1,4 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  /* Palette Magenta */
+  --magenta-50: #fce4ec;
+  --magenta-100: #f8bbd0;
+  --magenta-200: #f48fb1;
+  --magenta-300: #f06292;
+  --magenta-400: #ec407a;
+  --magenta-500: #e91e63; /* couleur principale */
+  --magenta-600: #d81b60;
+  --magenta-700: #c2185b;
+  --magenta-800: #ad1457;
+  --magenta-900: #880e4f;
+
+  /* Accent Colors */
+  --magenta-a100: #ff80ab;
+  --magenta-a200: #ff4081;
+  --magenta-a400: #f50057;
+  --magenta-a700: #c51162;
+
+  /* Contraste (text) */
+  --magenta-contrast-50: #000000;
+  --magenta-contrast-100: #000000;
+  --magenta-contrast-200: #000000;
+  --magenta-contrast-300: #ffffff;
+  --magenta-contrast-400: #ffffff;
+  --magenta-contrast-500: #ffffff;
+  --magenta-contrast-600: #ffffff;
+  --magenta-contrast-700: #ffffff;
+  --magenta-contrast-800: #ffffff;
+  --magenta-contrast-900: #ffffff;
+  --magenta-contrast-a100: #000000;
+  --magenta-contrast-a200: #ffffff;
+  --magenta-contrast-a400: #ffffff;
+  --magenta-contrast-a700: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
