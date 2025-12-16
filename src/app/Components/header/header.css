@@ -1,3 +1,39 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.header-toolbar {
+  position: sticky;
+  background-color: var(--magenta-600);
+  min-height: 9vh;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: var(--magenta-50);
+  -webkit-user-drag: none; /* Chrome, Safari */
+  -khtml-user-drag: none; /* anciens Safari/ Konqueror */
+  -moz-user-drag: none; /* Firefox */
+  -o-user-drag: none; /* Opera */
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo::before {
+  content: '';
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  margin-right: 10px;
+  background-image: url(/cookiejpg.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.header-icons {
+  color: var(--magenta-50);
+}
