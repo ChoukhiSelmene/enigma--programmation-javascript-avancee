@@ -1,4 +1,6 @@
 .cookie-card {
+  display: flex;
+  flex-direction: column;
   max-width: 320px;
 }
 
@@ -7,32 +9,33 @@
   background-size: cover;
 }
 
+.product-title {
+  align-self: center;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+}
+
 .price {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 8px;
+  margin: 0;
 }
 
 .product-image {
   background-color: var(--magenta-100);
 }
 
-.options {
-  display: flex;
-  justify-content: space-around;
-}
-
-.options > img.none::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: black;
-  backdrop-filter: blur(20px);
-  z-index: 2;
+.options > img.none {
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 .options > img {
   width: 24px;
-  height: auto;
+  height: 24px;
 }
