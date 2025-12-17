@@ -1,0 +1,29 @@
+<mat-card class="cookie-card" appearance="outlined">
+  <!-- Header -->
+  <mat-card-header>
+    <mat-card-title class="product-title">{{ product().name }}</mat-card-title>
+  </mat-card-header>
+
+  <!-- Image -->
+  <img
+    mat-card-image
+    src="assets/products/cookie-default.png"
+    alt="Photo du cookie {{ product().name }}"
+    class="product-image"
+    draggable="false"
+  />
+
+  <!-- Content -->
+  <mat-card-content class="options">
+    <img src="assets/products/cacahuete.png" [class]="!product().peantus ? 'none' : ''" />
+    <img src="assets/products/du-sucre.png" [class]="!product().brownSugar ? 'none' : ''" />
+    <p class="price">
+      {{ product().price }}
+    </p>
+  </mat-card-content>
+
+  <!-- Actions -->
+  <mat-card-actions align="end">
+    <button mat-button color="primary">Ajouter au panier</button>
+  </mat-card-actions>
+</mat-card>

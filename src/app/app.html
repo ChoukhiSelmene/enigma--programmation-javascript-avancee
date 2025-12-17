@@ -4,5 +4,10 @@
 
 <!-- products -->
 
+<section class="product-section">
+  @for (product of bunchOfProducts; track product.id) {
+  <app-product [product]="product"></app-product>
+  }
+</section>
 <!-- footer -->
 <app-footer></app-footer>
