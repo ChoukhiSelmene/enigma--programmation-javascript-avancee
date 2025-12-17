@@ -1,0 +1,38 @@
+.cookie-card {
+  max-width: 320px;
+}
+
+.cookie-avatar {
+  background-image: url('/assets/cookies/cookie-icon.png');
+  background-size: cover;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.product-image {
+  background-color: var(--magenta-100);
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.options > img.none::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  backdrop-filter: blur(20px);
+  z-index: 2;
+}
+
+.options > img {
+  width: 24px;
+  height: auto;
+}
