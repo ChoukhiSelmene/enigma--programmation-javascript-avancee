@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Product } from './product';
+import { mockedCookie } from '../data/MockedCookies';
+import { input, signal } from '@angular/core';
 
 describe('Product', () => {
   let component: Product;
@@ -8,12 +10,12 @@ describe('Product', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Product]
-    })
-    .compileComponents();
+      imports: [Product],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Product);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('product', mockedCookie);
     await fixture.whenStable();
   });
 

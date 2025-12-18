@@ -1,7 +1,7 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Cookie } from '../models/Cookie.interface';
 import { MatButtonModule } from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-product',
@@ -11,4 +11,6 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class Product {
   product = input.required<Cookie>();
+
+  addToCartOutput = output<Cookie>(); // ADD TO CART : 2
 }

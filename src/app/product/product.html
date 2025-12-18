@@ -17,13 +17,14 @@
   <mat-card-content class="options">
     <img src="assets/products/cacahuete.png" [class]="!product().peantus ? 'none' : ''" />
     <img src="assets/products/du-sucre.png" [class]="!product().brownSugar ? 'none' : ''" />
-    <p class="price">
-      {{ product().price }}
-    </p>
+    <p class="price">{{ product().price }}€</p>
   </mat-card-content>
 
   <!-- Actions -->
   <mat-card-actions align="end">
-    <button mat-button color="primary">Ajouter au panier</button>
+    <button mat-button (click)="addToCartOutput.emit(product())" color="primary">
+      <!-- ADD TO CART : 1 -->
+      Ajouter au panier
+    </button>
   </mat-card-actions>
 </mat-card>
