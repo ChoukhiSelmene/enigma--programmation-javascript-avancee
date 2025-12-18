@@ -1,7 +1,7 @@
 import { Component, HostBinding, inject, Input, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Header } from './Components/header/header';
-import { Footer } from './Components/footer/footer';
+import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
 import { Product } from './product/product';
 
 @Component({
