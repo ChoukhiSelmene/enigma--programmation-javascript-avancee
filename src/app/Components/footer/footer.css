@@ -1,0 +1,9 @@
+.footer {
+  position: sticky;
+  background-color: var(--magenta-600);
+  min-height: 7vh;
+  color: var(--magenta-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
