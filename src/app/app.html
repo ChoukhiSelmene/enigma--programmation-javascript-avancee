@@ -3,15 +3,6 @@
 <app-header></app-header>
 
 <!-- products -->
-
-<section class="product-section">
-  @for (product of bunchOfCookies(); track product.id) {
-  <app-product
-    [product]="product"
-    (addToCartOutput)="displayProductInConsole($event)"
-  ></app-product>
-  <!-- ADD TO CART : 3  -->
-  }
-</section>
+<router-outlet></router-outlet>
 <!-- footer -->
 <app-footer></app-footer>

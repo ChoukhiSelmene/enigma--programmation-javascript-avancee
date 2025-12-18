@@ -1,0 +1,9 @@
+<section class="product-section">
+  @for (product of bunchOfCookies(); track product.id) {
+  <app-product
+    [product]="product"
+    (addToCartOutput)="displayProductInConsole($event)"
+  ></app-product>
+  <!-- ADD TO CART : 3  -->
+  }
+</section>
