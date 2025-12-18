@@ -3,9 +3,11 @@
 }
 
 .header-toolbar {
-  position: sticky;
+  position: fixed;
+  top: 0;
   background-color: var(--magenta-600);
   min-height: 9vh;
+  z-index: 2;
 }
 
 .header-logo {

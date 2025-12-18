@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  margin-top: 100px;
+}
+
+.product-section {
+  width: 90vw;
+  margin: 5%;
+  display: flex;
+  justify-content: flex-start;
+  row-gap: 20px;
+  column-gap: 2%;
+  flex-wrap: wrap;
+}
