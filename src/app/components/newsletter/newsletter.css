@@ -1,0 +1,6 @@
+.ng-valid {
+  color: green;
+}
+.ng-touched.ng-invalid {
+  color: red;
+}

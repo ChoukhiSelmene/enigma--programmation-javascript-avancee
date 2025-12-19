@@ -1,0 +1,25 @@
+<h2>Join Our Newsletter</h2>
+<p>Get updates on new products, special offers, and so on...</p>
+
+<form #userForm="ngForm" (ngSubmit)="submitForm(userForm.value)">
+  <input
+    ngModel
+    #email="ngModel"
+    name="email"
+    placeholder="enter your email"
+    type="email"
+    pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"
+    required
+  />
+  <input
+    ngModel
+    #firstname="ngModel"
+    name="firstname"
+    placeholder="Firstname"
+    type="text"
+    required
+  />
+  <input ngModel #lastname="ngModel" name="lastname" placeholder="Lastname" type="text" required />
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+  {{ email.valid }}
+</form>
