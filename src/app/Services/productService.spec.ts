@@ -1,10 +1,9 @@
-import { TestBed } from '@angular/core/testing';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
+import { TestBed } from '@angular/core/testing';
 
-import { ProductResponse, productService } from './productService';
-import { Cookie } from '../models/Cookie.interface';
 import { mockedCookies } from '../data/MockedCookies';
+import { ProductResponse, productService } from './productService';
 
 describe('productService', () => {
   let service: productService;
